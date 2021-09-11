@@ -22,6 +22,7 @@ const Index = () => {
         initialValues={{ name: "", age: 0 }}
         onSubmit={async (values) => {
           console.log(values);
+          //main kaam yh horha hai post ka
           const response = await fetch(`/.netlify/functions/formikpost`, {
             method: "post",
             body: JSON.stringify(values),
