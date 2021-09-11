@@ -14,7 +14,9 @@ const Index = () => {
         textAlign: "center",
       }}
     >
-      <div>Formik Form with faunaDb and Serverless Functions</div>
+      <div>
+        <h1>Formik Form with faunaDb and Serverless Functions</h1>
+      </div>
       <hr />
       <Formik
         initialValues={{ name: "", age: 0 }}
