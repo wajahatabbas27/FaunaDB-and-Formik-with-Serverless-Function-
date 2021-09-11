@@ -7,7 +7,13 @@ const Index = () => {
   const [mydata, setData] = useState("");
 
   return (
-    <div>
+    <div
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+      }}
+    >
       <div>Formik Form with faunaDb and Serverless Functions</div>
       <hr />
       <Formik
@@ -34,11 +40,14 @@ const Index = () => {
                 name='name'
                 id='name'
               />
+              <br />
+              <br />
               <ErrorMessage
                 name='name'
                 render={(msg) => <span style={{ color: red }}>{msg}</span>}
               />
             </div>
+            <br />
             <div>
               <Field
                 type='number'
@@ -48,6 +57,8 @@ const Index = () => {
                 name='age'
                 id='age'
               />
+              <br />
+              <br />
               <ErrorMessage
                 name='age'
                 //render={(msg) => <span style={{ color: red }}>{msg}</span>}
@@ -61,7 +72,7 @@ const Index = () => {
       </Formik>
       <br /> <hr />
       <br />
-      <div>{mydata.id}</div>
+      <div>FaunaDb Id for the above field is :{mydata.id}.</div>
     </div>
   );
 };
