@@ -75,7 +75,7 @@ const Index = () => {
       </Formik>
       <br /> <hr />
       <br />
-      <div>FaunaDb Id for the above field is :{mydata.id}.</div>
+      <div>FaunaDb Id for the above field is : {mydata.id}.</div>
     </div>
   );
 };
