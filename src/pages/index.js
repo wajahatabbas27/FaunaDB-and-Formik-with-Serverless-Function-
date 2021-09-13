@@ -12,6 +12,7 @@ const Index = () => {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
+        backgroundColor: "lightblue",
       }}
     >
       <div>
