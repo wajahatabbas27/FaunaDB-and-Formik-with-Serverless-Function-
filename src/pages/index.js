@@ -13,6 +13,7 @@ const Index = () => {
         justifyContent: "center",
         textAlign: "center",
         backgroundColor: "lightblue",
+        maxWidth: "100",
       }}
     >
       <div>
